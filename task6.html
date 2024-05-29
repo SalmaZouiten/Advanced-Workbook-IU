@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Components Shop</title>
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/736x/26/1c/0e/261c0e395a1e3a4bdf765a7e60c3f0c4.jpg) ;
+        }
+        h1{
+            text-align: center; color: aliceblue; font-size: xx-large; 
+        }
+
+        h3{
+            text-align: center; color: aliceblue;
+        }
+        h2{
+            color: aliceblue; text-align: center;
+        }
+        div{
+            align-items: center;
+        }
+        ul{
+            color: blanchedalmond; text-align: center;
+
+        }
+        div{
+            color: antiquewhite; font-size: medium; text-align: center;
+        }
+        button{
+            background-color: rgb(76, 106, 107);
+            color: aquamarine;
+            display: block;
+            padding: 10;
+        }
+
+       
+    </style>
+    
+</head>
+<body>
+
+    <h1> Computer Components Shop </h1>
+
+    <h3> Find what you need!</h3>
+
+    <h2> We Have:</h2>
+
+    <ul>
+        <li> Keyboards </li>
+        <li> Mouses</li>
+        <li> Monitors</li>
+        <li> Usb sticks</li>
+        <li> Docking stations</li>
+        <li> Chargers</li>
+    </ul>
+   
+    <div>
+    <img src="keyboard.jpg" width="350" height="200" title="this is a keyboard"/>
+    
+    <img src="mouse.jpg" width="200" height="200" title="this is a mouse"/>
+    
+    <img src="monitor.jpg" width="200" height="200" title="this is a monitor" />
+    
+    <img src="usb.jpg" width="200" height="200" title="this is a usb stick"/>
+    
+    <img src="dock.jpeg" width="200" height="200" title="this is a docking station"/>
+    
+    <img src="charger.jpeg" width="200" height="200" title="this is a charger">
+    </div>
+    <br> 
+
+   
+    <p style="text-align: center; color: aliceblue;"> <big>Please enter the following Information</big></p>
+    <div>
+    <label for="fname"> First name:</label>
+    <br>
+    <input type="text" id="fname">
+    <br>
+    <label for="lname"> Last name:</label>
+    <br>
+    <input type="text" id="lname">
+    <br>
+    <label for="add"> Address: </Address></label>
+    <br>
+    <input type="text" id="add">
+
+    <br>
+    <p> <big>Place your order down below</big></p>
+    <label for="keyboard"> Keyboard</label>
+    <br>
+    <input type="number" id="keyboard">
+    <br>
+    <br>
+    <label for="monitor"> Monitor</label>
+    <br>
+    <input type="number" id="monitor">
+    <br>
+    <br>
+    <label for="mouse"> Mouse</label>
+    <br>
+    <input type="number" id="mouse">
+    <br>
+    <br> 
+    <label for="usb stick"> USB stick</label>  
+    <br>
+    <input type="number" id="usb stick">
+    <br>
+    <br>
+    <label for="dock"> Docking station</label>
+    <br>
+    <input type="number" id="dock">
+    <br>
+    <br>
+    <label for="charger"> Charger</label>
+    <br>
+    <input type="number" id="charger">
+    <br>
+    <br>
+    <br>
+    <button onclick="sendorder()" style="background-color: rgb(76, 106, 107); color: rgb(198, 230, 219); 
+    padding: 10px; border-radius: 10px; display: block; margin: auto;" > <big>Submit order</big></button>
+    </div>
+
+   
+    <script>
+
+        function sendorder() {
+            const firstName=document.getElementById("fname").value 
+            const lastName=document.getElementById("lname").value
+            const Address=document.getElementById("add").value
+            const keyboard=document.getElementById("keyboard").value 
+            const mouse=document.getElementById("mouse").value
+            const monitor=document.getElementById("monitor").value
+            const charger=document.getElementById("charger").value 
+            const usbstick=document.getElementById("usb stick").value
+            const dock=document.getElementById("dock").value 
+            window.alert(firstName + " " + lastName + " " + "ordered: " + keyboard + " keyboards, " + mouse + " mice, " + monitor 
+            + " monitors, "+ charger + " chargers, "+ usbstick + " USB sticks, "+ dock + " docking stations, and the order has been sent to: " + Address + ". Thank you for shopping with us!");
+        }
+
+    </script>
+    
+
+</body>
+
+</html>
